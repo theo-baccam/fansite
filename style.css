@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family:Montserrat;
+    font-size:16px;
+    color:white;
+    margin:0;
+}
+
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100vw;
+    box-sizing: border-box;
+    padding:1em
+}
+#nav1{
+    display: flex;
+    justify-content: center;
+}
+#blank_banshee_name{
+    width:18em;
+    object-fit:contain;
+}
+
+#nav2{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color:white;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+section{
+    display:flex;
+    justify-content: space-around;
+}
+
+footer{
+    position:absolute;
+    bottom:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100vw;
+    box-sizing: border-box;
+    padding:1em
+}
+article{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    backdrop-filter: blur(4px);
+    width:45em;
+    border-radius: 8px;
+    margin:2em;
+    padding:1em;
+}
+
+#accueil_background{
+    background-image:url("images/accueil_background.jpg");
+    background-position: center 33%;
+}
+#accueil_headfoot{
+    background-color: #9406FB;
+}
+
+#blank_banshee_mask{
+    width:12em;
+    object-fit: contain;
+}
+#introtext{
+    flex-basis: 60%; 
+}
+form input, label, textarea, select{
+    padding:0.5em
+}
+form textarea{
+    width:100%;
+    max-width: 600px;
+    height:10em;
+    resize:none
+}
+#contact_background{
+    background-image:url("images/contact_background.png");
+    background-position: center top;
+}
+#contact_headfoot{
+    background-color: black
+}
