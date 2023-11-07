@@ -120,3 +120,11 @@ form textarea{
     text-decoration:none;
     color:#2a6860
 }
+
+#liens_background{
+    background-image:url("images/liens_background.png");
+    background-position: center center;
+}
+#liens_headfoot{
+    background-color:#FEF600
+}
