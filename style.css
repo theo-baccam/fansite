@@ -37,7 +37,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
 }
-a{
+nav a{
     text-decoration: none;
     color:white;
     padding-left: 1em;
@@ -114,4 +114,9 @@ form textarea{
 #image_4D_tour{
     width:16em;
     object-fit: contain;
+}
+
+#lien_4D{
+    text-decoration:none;
+    color:#2a6860
 }
