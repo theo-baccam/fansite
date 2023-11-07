@@ -106,7 +106,7 @@ form textarea{
 
 #actualite_background{
     background-image:url("images/actualite_background.png");
-    background-position: center top;
+    background-position: center center;
 }
 #actualite_headfoot{
     background-color: black
