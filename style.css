@@ -128,3 +128,24 @@ form textarea{
 #liens_headfoot{
     background-color:#FEF600
 }
+
+a{
+    color:#FEF600;
+    text-decoration: none;
+}
+
+#article_liens{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap
+}
+
+.div_liens{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.div_liens a{
+    padding:0.5em
+}
