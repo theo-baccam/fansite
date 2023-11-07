@@ -84,7 +84,7 @@ article{
     width:12em;
     object-fit: contain;
 }
-#introtext{
+article p{
     flex-basis: 60%; 
 }
 form input, label, textarea, select{
@@ -109,5 +109,9 @@ form textarea{
     background-position: center center;
 }
 #actualite_headfoot{
-    background-color: black
+    background-color:#242431
+}
+#image_4D_tour{
+    width:16em;
+    object-fit: contain;
 }
