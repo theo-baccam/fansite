@@ -46,7 +46,9 @@ nav a{
 
 section{
     display:flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 footer{
@@ -80,8 +82,8 @@ article{
     background-color: #9406FB;
 }
 
-#blank_banshee_mask{
-    width:12em;
+article img{
+    width:14em;
     object-fit: contain;
 }
 article p{
@@ -110,10 +112,6 @@ form textarea{
 }
 #actualite_headfoot{
     background-color:#242431
-}
-#image_4D_tour{
-    width:16em;
-    object-fit: contain;
 }
 
 #lien_4D{
@@ -148,4 +146,16 @@ a{
 
 .div_liens a{
     padding:0.5em
+}
+
+#discog_background{
+    background-image:url("images/discog_background.png");
+    background-position: center bottom;
+}
+#discog_headfoot{
+    background-color:#858CBF
+}
+
+.albums{
+    width:10em
 }
