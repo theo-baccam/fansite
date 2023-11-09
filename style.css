@@ -164,8 +164,19 @@ footer{
 .discog footer{
     background-color:#858CBF
 }
+.discog article{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center
+}
 .albums{
-    width:10em
+    width: 10em;
+    margin:0.5em;
+    transition: all .2s ease-in-out
+}
+.albums:hover{
+    transform: scale(1.1);
 }
 
 #photovideo{
@@ -193,7 +204,11 @@ footer{
     margin:0.5em
 }
 #photovideo article div a img{
-    width:20em
+    width:20em;
+    transition: all .2s ease-in-out;
+}
+#photovideo article div a img:hover{
+    transform: scale(1.1);
 }
 #photovideo article video{
     width:42em
