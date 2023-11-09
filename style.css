@@ -62,12 +62,16 @@ article{
     border-radius: 8px;
     margin:2em;
     padding:1em;
+    gap:1em
 }
 article img{
     width:14em;
     object-fit: contain;
 }
 article p{
+    flex-basis: 60%; 
+}
+article div{
     flex-basis: 60%; 
 }
 
@@ -172,7 +176,6 @@ footer{
 }
 .albums{
     width: 10em;
-    margin:0.5em;
     transition: all .2s ease-in-out
 }
 .albums:hover{
