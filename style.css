@@ -1,3 +1,11 @@
+/* La raison qu'il n'y a pas de media queries pour que le site
+s'adapte aux écrans mobiles est que background-attachment: fixed
+ne marche pas correctement sur les mobiles et qu'il faut faire 
+un workaround, cependant j'ai découvert que faire ceci voudra dire 
+modifier radicalement mes html et mon css.
+https://css-tricks.com/the-fixed-background-attachment-hack/
+Je crois que peut-être prendre une approche mobile-first la
+prochaine fois serait une bonne idée. */
 
 /* global */
 @font-face {
@@ -182,7 +190,7 @@ footer a{
     background-color:#FEF600;
 }
 #liens header a,
-#liens footer p{
+#liens footer a{
     filter:invert(100%)
 }
 #liens article{
