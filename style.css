@@ -1,3 +1,5 @@
+
+/* global */
 @font-face {
     font-family: 'Montserrat';
     src: url(fonts/Montserrat-VariableFont_wght.ttf);
@@ -22,16 +24,15 @@ header{
     box-sizing: border-box;
     padding:1em
 }
-#nav1{
+.nav1{
     display: flex;
     justify-content: center;
 }
-#blank_banshee_name{
+.nav1 img{
     width:18em;
     object-fit:contain;
 }
-
-#nav2{
+.nav2{
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -44,22 +45,11 @@ nav a{
     padding-right: 1em;
 }
 
-section{
+main{
     display:flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-}
-
-footer{
-    position:absolute;
-    bottom:0;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width:100vw;
-    box-sizing: border-box;
-    padding:1em
 }
 article{
     display:flex;
@@ -73,15 +63,6 @@ article{
     margin:2em;
     padding:1em;
 }
-
-#accueil_background{
-    background-image:url("images/accueil_background.jpg");
-    background-position: center 33%;
-}
-#accueil_headfoot{
-    background-color: #9406FB;
-}
-
 article img{
     width:14em;
     object-fit: contain;
@@ -89,101 +70,128 @@ article img{
 article p{
     flex-basis: 60%; 
 }
-form input, label, textarea, select{
+
+footer{
+    position:absolute;
+    bottom:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100vw;
+    box-sizing: border-box;
+    padding:1em
+}
+
+
+
+/* specifics */
+#accueil{
+    background-image:url("images/accueil_background.jpg");
+    background-position: center 33%;
+}
+#accueil header,
+#accueil footer{
+    background-color: #9406FB;
+}
+
+#actualite{
+    background-image:url("images/actualite_background.png");
+    background-position: center center;
+}
+#actualite header,
+#actualite footer{
+    background-color:#242431
+}
+#actualite article a{
+    text-decoration:none;
+    color:#2a6860
+}
+
+#contact{
+    background-image:url("images/contact_background.png");
+    background-position: center top;
+}
+#contact header,
+#contact footer{
+    background-color: black
+}
+#contact form input,
+#contact label,
+#contact textarea,
+#contact select{
     padding:0.5em
 }
-form textarea{
+#contact form textarea{
     width:100%;
     max-width: 600px;
     height:10em;
     resize:none
 }
-#contact_background{
-    background-image:url("images/contact_background.png");
-    background-position: center top;
-}
-#contact_headfoot{
-    background-color: black
-}
 
-#actualite_background{
-    background-image:url("images/actualite_background.png");
-    background-position: center center;
-}
-#actualite_headfoot{
-    background-color:#242431
-}
-
-#lien_4D{
-    text-decoration:none;
-    color:#2a6860
-}
-
-#liens_background{
+#liens{
     background-image:url("images/liens_background.png");
     background-position: center center;
 }
-#liens_headfoot{
-    background-color:#FEF600
+#liens header,
+#liens footer{
+    background-color:#FEF600;
 }
-
-a{
-    color:#FEF600;
-    text-decoration: none;
+#liens header a,
+#liens footer p{
+    filter:invert(100%)
 }
-
-#article_liens{
+#liens article{
     display:flex;
     flex-direction:row;
     flex-wrap: wrap
 }
-
-.div_liens{
+#liens article div{
     display:flex;
     flex-direction:column;
     align-items: center;
 }
-
-.div_liens a{
+#liens article div a{
+    color:#FEF600;
+    text-decoration: none;
     padding:0.5em
 }
 
-#discog_background{
+.discog{
     background-image:url("images/discog_background.png");
     background-position: center bottom;
 }
-#discog_headfoot{
+.discog header,
+.discog footer{
     background-color:#858CBF
 }
-
 .albums{
     width:10em
 }
 
-#photovideo_background{
+#photovideo{
     background-image:url("images/photovideo_background.png");
     background-position: center 33%;
     background-attachment: fixed;
 }
-
-#photovideo_headfoot{
+#photovideo header,
+#photovideo footer{
     background-color:#56C987;
     position:relative
 }
-
-#article_photovideo{
+#photovideo article{
     display:flex;
     flex-direction:row;
     justify-content: center;
+    align-items: start;
     flex-wrap: wrap;
 }
-
-#article_photovideo div{
+#photovideo article div{
     display:flex;
     flex-direction: column;
-    align-items: center;
 }
-
-#article_photovideo div img{
+#photovideo article div a{
+    margin:0.5em
+}
+#photovideo article div a img{
     width:20em
 }
