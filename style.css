@@ -79,11 +79,16 @@ footer{
     position:absolute;
     bottom:0;
     display:flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     width:100vw;
     box-sizing: border-box;
     padding:1em
+}
+footer a{
+    color:white;
+    text-decoration: none;
+    font-size: 0.8em
 }
 
 
@@ -96,68 +101,6 @@ footer{
 #accueil header,
 #accueil footer{
     background-color: #9406FB;
-}
-
-#actualite{
-    background-image:url("images/actualite_background.png");
-    background-position: center center;
-}
-#actualite header,
-#actualite footer{
-    background-color:#242431
-}
-#actualite article a{
-    text-decoration:none;
-    color:#2a6860
-}
-
-#contact{
-    background-image:url("images/contact_background.png");
-    background-position: center top;
-}
-#contact header,
-#contact footer{
-    background-color: black
-}
-#contact form input,
-#contact label,
-#contact textarea,
-#contact select{
-    padding:0.5em
-}
-#contact form textarea{
-    width:100%;
-    max-width: 600px;
-    height:10em;
-    resize:none
-}
-
-#liens{
-    background-image:url("images/liens_background.png");
-    background-position: center center;
-}
-#liens header,
-#liens footer{
-    background-color:#FEF600;
-}
-#liens header a,
-#liens footer p{
-    filter:invert(100%)
-}
-#liens article{
-    display:flex;
-    flex-direction:row;
-    flex-wrap: nowrap
-}
-#liens article div{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-}
-#liens article div a{
-    color:#FEF600;
-    text-decoration: none;
-    padding:0.5em
 }
 
 .discog{
@@ -180,6 +123,19 @@ footer{
 }
 .albums:hover{
     transform: scale(1.1);
+}
+
+#actualite{
+    background-image:url("images/actualite_background.png");
+    background-position: center center;
+}
+#actualite header,
+#actualite footer{
+    background-color:#242431
+}
+#actualite article a{
+    text-decoration:none;
+    color:#2a6860
 }
 
 #photovideo{
@@ -215,4 +171,66 @@ footer{
 }
 #photovideo article video{
     width:42em
+}
+
+#liens{
+    background-image:url("images/liens_background.png");
+    background-position: center center;
+}
+#liens header,
+#liens footer{
+    background-color:#FEF600;
+}
+#liens header a,
+#liens footer p{
+    filter:invert(100%)
+}
+#liens article{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap
+}
+#liens article div{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+#liens article div a{
+    color:#FEF600;
+    text-decoration: none;
+    padding:0.5em
+}
+
+#contact{
+    background-image:url("images/contact_background.png");
+    background-position: center top;
+}
+#contact header,
+#contact footer{
+    background-color: black
+}
+#contact form input,
+#contact label,
+#contact textarea,
+#contact select{
+    padding:0.5em
+}
+#contact form textarea{
+    width:100%;
+    max-width: 600px;
+    height:10em;
+    resize:none
+}
+
+#about{
+    background-image:url("images/about.png");
+    background-position: center 33%;
+}
+#about header,
+#about footer{
+    background-color: #7E00FF;
+}
+#about article a{
+    color:#F800A1;
+    text-decoration: none;
 }
