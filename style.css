@@ -2,7 +2,8 @@
 s'adapte aux écrans mobiles est que background-attachment: fixed
 ne marche pas correctement sur les mobiles et qu'il faut faire 
 un workaround, cependant j'ai découvert que faire ceci voudra dire 
-modifier radicalement mes html et mon css.
+modifier radicalement mes html et mon css. Beaucoup de complications
+avec les backgrounds et z-index.
 https://css-tricks.com/the-fixed-background-attachment-hack/
 Je crois que peut-être prendre une approche mobile-first la
 prochaine fois serait une bonne idée. */
@@ -125,6 +126,8 @@ footer a{
     justify-content: center;
     align-items:center
 }
+/* transition et transform permet que l'image devient un peu plus grande lorsque la
+souris passe dessus, avec une animation.*/
 .albums{
     width: 10em;
     transition: all .2s ease-in-out
