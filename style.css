@@ -211,6 +211,10 @@ souris passe dessus, avec une animation.*/
     text-decoration: none;
     padding:0.5em
 }
+#liens article div a img{
+    height:1em;
+    border:0
+}
 
 #contact{
     background-image:url("images/contact_background.png");
