@@ -1,13 +1,3 @@
-/* La raison qu'il n'y a pas de media queries pour que le site
-s'adapte aux écrans mobiles est que background-attachment: fixed
-ne marche pas correctement sur les mobiles et qu'il faut faire 
-un workaround, cependant j'ai découvert que faire ceci voudra dire 
-modifier radicalement mes html et mon css. Beaucoup de complications
-avec les backgrounds et z-index.
-https://css-tricks.com/the-fixed-background-attachment-hack/
-Je crois que peut-être prendre une approche mobile-first la
-prochaine fois serait une bonne idée. */
-
 /* global */
 @font-face {
     font-family: 'Montserrat';
@@ -71,7 +61,8 @@ article{
     border-radius: 8px;
     margin:2em;
     padding:1em;
-    gap:1em
+    gap:1em;
+    overflow: auto;
 }
 article img{
     width:14em;
@@ -209,11 +200,8 @@ souris passe dessus, avec une animation.*/
 #liens article div a{
     color:#FEF600;
     text-decoration: none;
-    padding:0.5em
-}
-#liens article div a img{
-    height:1em;
-    border:0
+    padding:0.5em;
+    text-align: center;
 }
 
 #contact{
@@ -248,4 +236,26 @@ souris passe dessus, avec une animation.*/
 #about article a{
     color:#F800A1;
     text-decoration: none;
+}
+
+
+
+@media screen and (max-width:840px){
+    article,
+    #photovideo article,
+    #liens article{
+        width:80vw;
+        height:60vh;
+        flex-wrap: wrap;
+    }
+    #photovideo article,
+    #photovideo article video{
+        width:80vw;
+        height:auto
+    }
+}
+@media screen and (max-width:418px){
+    #photovideo article img{
+        width:80vw
+    }
 }
